@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<NEUMONIA &le; 1.5<br/>entropy = 0.457<br/>samples = 127696<br/>value = [12288, 115408]<br/>class = NO SE INTUBA>, fillcolor="#4ea7e8"] ;
+1 [label=<OTRA_COM &le; 50.0<br/>entropy = 0.576<br/>samples = 82860<br/>value = [11328, 71532]<br/>class = NO SE INTUBA>, fillcolor="#58ade9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<EDAD &le; 52.5<br/>entropy = 0.571<br/>samples = 82077<br/>value = [11094, 70983]<br/>class = NO SE INTUBA>, fillcolor="#58ace9"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.525<br/>samples = 30232<br/>value = [3586, 26646]<br/>class = NO SE INTUBA>, fillcolor="#54aae8"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.597<br/>samples = 51845<br/>value = [7508, 44337]<br/>class = NO SE INTUBA>, fillcolor="#5baee9"] ;
+2 -> 4 ;
+5 [label=<TABAQUISMO &le; 50.0<br/>entropy = 0.88<br/>samples = 783<br/>value = [234, 549]<br/>class = NO SE INTUBA>, fillcolor="#8dc7f0"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.794<br/>samples = 455<br/>value = [109, 346]<br/>class = NO SE INTUBA>, fillcolor="#77bced"] ;
+5 -> 6 ;
+7 [label=<entropy = 0.959<br/>samples = 328<br/>value = [125, 203]<br/>class = NO SE INTUBA>, fillcolor="#b3d9f5"] ;
+5 -> 7 ;
+8 [label=<EDAD &le; 51.5<br/>entropy = 0.149<br/>samples = 44836<br/>value = [960, 43876]<br/>class = NO SE INTUBA>, fillcolor="#3d9fe6"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<EDAD &le; 1.5<br/>entropy = 0.126<br/>samples = 19094<br/>value = [330, 18764]<br/>class = NO SE INTUBA>, fillcolor="#3c9fe5"] ;
+8 -> 9 ;
+10 [label=<entropy = 0.331<br/>samples = 443<br/>value = [27, 416]<br/>class = NO SE INTUBA>, fillcolor="#46a3e7"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.12<br/>samples = 18651<br/>value = [303, 18348]<br/>class = NO SE INTUBA>, fillcolor="#3c9fe5"] ;
+9 -> 11 ;
+12 [label=<ASMA &le; 1.5<br/>entropy = 0.166<br/>samples = 25742<br/>value = [630, 25112]<br/>class = NO SE INTUBA>, fillcolor="#3e9fe6"] ;
+8 -> 12 ;
+13 [label=<entropy = 0.084<br/>samples = 570<br/>value = [6, 564]<br/>class = NO SE INTUBA>, fillcolor="#3b9ee5"] ;
+12 -> 13 ;
+14 [label=<entropy = 0.168<br/>samples = 25172<br/>value = [624, 24548]<br/>class = NO SE INTUBA>, fillcolor="#3e9fe6"] ;
+12 -> 14 ;
+}
